@@ -26,12 +26,18 @@ Before you begin, make sure you have the following tools installed on your syste
 ```helm install my-app ./(your-path-to-Chart.yaml)```
 
 # 4. Verify the Deployment
-```kubectl get pods```
-
-```kubectl get services```
+```kubectl get pods,svc```
 
 # 5. Access the Application
-```minikube service my-app-service```
+To access the voting app service use:
+
+```minikube service voting-service --url```
+
+Then copy and paste the URL into your browser.
+
+Repeat the process for the result service:
+
+```minikube service result-service --url```
 
 # Cleanup: To delete the deployment and free up resources
 ```helm uninstall my-app```
