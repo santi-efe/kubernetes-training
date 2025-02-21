@@ -23,7 +23,7 @@ Before you begin, make sure you have the following tools installed on your syste
 ```cd kubernetes-training```
 
 # 3. Deploy with Helm
-```helm install my-app ./helm-chart```
+```helm install my-app ./(your-path-to-Chart.yaml)```
 
 # 4. Verify the Deployment
 ```kubectl get pods```
